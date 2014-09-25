@@ -11,7 +11,7 @@
 
 	// configuration =================
 
-	mongoose.connect('mongodb://' + argv.be_ip + ':' + argv.mongo_port +'/my_database');
+	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
 
     app.use('/js', express.static(__dirname + '/js'));
     app.use('/bower_components', express.static(__dirname + '/bower_components'));
